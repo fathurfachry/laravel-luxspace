@@ -10,6 +10,8 @@ class TransactionItems extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     /**
      * Get the user associated with the TransactionItems
      *

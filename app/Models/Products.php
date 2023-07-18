@@ -35,7 +35,7 @@ class Products extends Model
     */
    public function carts(): HasOne
    {
-       return $this->hasOne(User::class, 'foreign_key', 'local_key');
+       return $this->hasOne(User::class, 'product_id', 'id');
    }
 
    /**

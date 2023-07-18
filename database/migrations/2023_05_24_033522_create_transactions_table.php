@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('telp');
             $table->string('courrier')->nullable();
             $table->string('payment')->default('MIDTRANS');
-            $table->string('payment_url');
+            $table->string('payment_url')->nullable();
             $table->string('total_price');
             $table->string('status')->default('PENDING');
             $table->softDeletes();
